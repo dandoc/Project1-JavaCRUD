@@ -23,7 +23,7 @@ public class WordManager {
     WordManager(){
         wordCRUD = new WordCRUD(s);
     }
-    public int selectMenu(){
+    public int selectMenu() {
         System.out.print("*** 영단어 마스터 ***\n" +
                 "********************\n" +
                 "1. 모든 단어 보기\n" +
@@ -43,12 +43,12 @@ public class WordManager {
             int menu = selectMenu();
             if (menu == 0) break;
             if (menu == 1) wordCRUD.listAll();
-            if (menu == 2) ;
-            if (menu == 3) ;
+            if (menu == 2) break;
+            if (menu == 3) break;
             if (menu == 4) wordCRUD.addWord();
-            if (menu == 5) ;
-            if (menu == 6) ;
-            if (menu == 7) ;
+            if (menu == 5) break;
+            if (menu == 6) break;
+            if (menu == 7) break;
         }
     }
 }
