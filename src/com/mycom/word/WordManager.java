@@ -38,17 +38,22 @@ public class WordManager {
                 "=> 원하는 메뉴는? ");
         return s.nextInt();
     }
+    public void notImplement()
+    {
+        System.out.println("미구현 기능입니다. 프로그램을 종료합니다.");
+        System.exit(0);
+    }
     public void start(){
         while (true) {
             int menu = selectMenu();
             if (menu == 0) break;
             if (menu == 1) wordCRUD.listAll();
-            if (menu == 2) break;
-            if (menu == 3) break;
+            if (menu == 2) notImplement();
+            if (menu == 3) notImplement();
             if (menu == 4) wordCRUD.addWord();
-            if (menu == 5) break;
-            if (menu == 6) break;
-            if (menu == 7) break;
+            if (menu == 5) notImplement();
+            if (menu == 6) notImplement();
+            if (menu == 7) notImplement();
         }
     }
 }
