@@ -44,12 +44,11 @@ public class WordManager {
             int menu = selectMenu();
             if (menu == 0) break;
             if (menu == 1) wordCRUD.listAll();
-            if (menu == 2) break;
+            if (menu == 2) wordCRUD.searchLevel();
             if (menu == 3) break;
             if (menu == 4) wordCRUD.addWord();
             if (menu == 5) wordCRUD.updateItem();
             if (menu == 6) wordCRUD.deleteItem();
             if (menu == 7) wordCRUD.saveFile();
-        }
-    }
+색    }
 }
