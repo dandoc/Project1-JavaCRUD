@@ -1,5 +1,6 @@
 package com.mycom.word;
 
+import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -7,6 +8,7 @@ import java.util.Scanner;
 public class WordCRUD implements ICRUD{
     ArrayList<Word> list;
     Scanner s;
+    final String fname = "dict.txt";
     /*
      * => 난이도(1,2,3) & 새 단어 입력 :
      * 뜻 입력 :
@@ -106,5 +108,32 @@ public class WordCRUD implements ICRUD{
         }
         else
             System.out.printf("취소되었습니다. ");
+    }
+
+    public void loadFile() {
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(fname));
+            String line;
+            int count = 0;
+            while(true)
+            {
+                line = br.readLine();
+                if(line == null) break;
+
+                String data[] = line.split("\\|");
+                int level = Integer.parseInt(data[0]);
+                String word = data[1];
+                String meaning = data[2];
+                list.add(new Word(0, level, word, meaning));
+                count++;
+            }
+            br.close();
+            System.out.println("==> " + count + "개 로딩 완료");
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
