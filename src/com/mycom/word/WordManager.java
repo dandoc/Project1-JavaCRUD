@@ -38,10 +38,6 @@ public class WordManager {
                 "=> 원하는 메뉴는? ");
         return s.nextInt();
     }
-    public void notImplement()
-    {
-        System.out.println("미구현 기능입니다. 프로그램을 종료합니다.");
-    }
     public void start(){
         while (true) {
             int menu = selectMenu();
@@ -50,8 +46,8 @@ public class WordManager {
             if (menu == 2) break;
             if (menu == 3) break;
             if (menu == 4) wordCRUD.addWord();
-            if (menu == 5) break;
-            if (menu == 6) break;
+            if (menu == 5) wordCRUD.updateItem();
+            if (menu == 6) wordCRUD.deleteItem();
             if (menu == 7) break;
         }
     }
