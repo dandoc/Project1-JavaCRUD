@@ -49,7 +49,7 @@ public class WordManager {
             if (menu == 4) wordCRUD.addWord();
             if (menu == 5) wordCRUD.updateItem();
             if (menu == 6) wordCRUD.deleteItem();
-            if (menu == 7) break;
+            if (menu == 7) wordCRUD.saveFile();
         }
     }
 }
