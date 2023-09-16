@@ -20,9 +20,10 @@ public class WordManager {
     => 원하는 메뉴는?
      */
 
-    WordManager(){
+    WordManager() {
         wordCRUD = new WordCRUD(s);
     }
+
     public int selectMenu() {
         System.out.print("*** 영단어 마스터 ***\n" +
                 "********************\n" +
@@ -38,17 +39,19 @@ public class WordManager {
                 "=> 원하는 메뉴는? ");
         return s.nextInt();
     }
-    public void start(){
+
+    public void start() {
         wordCRUD.loadFile();
         while (true) {
             int menu = selectMenu();
             if (menu == 0) break;
             if (menu == 1) wordCRUD.listAll();
             if (menu == 2) wordCRUD.searchLevel();
-            if (menu == 3) break;
+            if (menu == 3) wordCRUD.searchWord();
             if (menu == 4) wordCRUD.addWord();
             if (menu == 5) wordCRUD.updateItem();
             if (menu == 6) wordCRUD.deleteItem();
             if (menu == 7) wordCRUD.saveFile();
-색    }
+        }
+    }
 }
