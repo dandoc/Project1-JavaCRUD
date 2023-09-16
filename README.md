@@ -1,8 +1,17 @@
 # Project1-JavaCRUD
 
-단어 추가 기능 실행 화면
-![스크린샷 2023-09-07 오전 10 57 00](https://github.com/dandoc/Project1-JavaCRUD/assets/43316470/bcaa5465-d91d-43e3-9a83-6bf14932f5bc)
+로딩 및 모든 단어 보기
+<p><img src="screenshot/로딩 및 모든 단어보기.png"></img></p>
+수준별 단어 보기
 
+단어 검색
 
-단어 목록 기능 실행 화면
-<img width="1440" alt="스크린샷 2023-09-07 오전 10 57 48" src="https://github.com/dandoc/Project1-JavaCRUD/assets/43316470/f0028f18-ed29-45f1-9fcf-15613accb8b8">
+단어 추가
+
+단어 수정
+
+단어 삭제
+
+파일 저장
+
+나가기
