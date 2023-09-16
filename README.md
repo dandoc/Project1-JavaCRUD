@@ -1,7 +1,7 @@
 # Project1-JavaCRUD
 
 로딩 및 모든 단어 보기
-<p><img src="screenshot/로딩 및 모든 단어보기.png"></img></p>
+<p><img src="screenshots/로딩 및 모든 단어보기.png"></img></p>
 수준별 단어 보기
 
 단어 검색
